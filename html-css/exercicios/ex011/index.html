@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mídias em HTML</title>
+  <style>
+    body {
+      background-color: rgb(85, 84, 84);
+    }
+    h1, p, h2, a {
+      color: blanchedalmond;
+    }
+  </style>
+</head>
+<body>
+  <h1>Imagem dinâmica</h1>
+  <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+  <picture>
+    <source media="(max-width: 600px)" srcset="images/profile.jpeg" type="image/jpeg">
+    <source media="(max-width: 900px)" srcset="images/teen_gohan.png" type="image/png">
+    <img src="images/megaman-X.png" alt="imagem flexível">
+  </picture>
+
+  <h1>Reproduzindo áudios</h1>
+  <p>Tarde Pra Viver - Banda X-23</p>
+  <audio src="media/tarde-pra-viver.mp3" controls autoplay></audio> <!--Auto play não funciona-->
+  <p>Pra Sempre - Banda X-23</p>
+  <audio preload="metadata" controls>
+    <source src="media/pra-sempre.mp3" type="audio/mpeg">
+    <!--A ideia aqui é usar mais de um tipo de formato de audio para aumentar a possibilidade de funcionar em diferentes tipos de navegador-->
+    <!--É possível colocar vários arquivos em sequencia, onde no caso de erro o próximo será executado-->
+  </audio>
+
+  <!--HandBrake - Software grátis para conversão de vídeos-->
+</body>
+</html>

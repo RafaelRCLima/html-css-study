@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhando com vídeos</title>
+  <style>
+    body {
+      background-color: rgb(85, 84, 84);
+    }
+    h1, p, h2, a {
+      color: blanchedalmond;
+    }
+  </style>
+</head>
+<body>
+  <h2>Partidas em Street Fighter V</h2>
+  <video src="media/rankeds001.mp4" poster="images/thumb.jpg" controls width="768"></video>
+
+  <h2>O mesmo video, outro jeito de colocar</h2> <!--Não funciona-->
+  <video width="768" poster="images/thumb.jpg" controls>
+    <source src="media/rankeds001.mp4" type="video/mp4">
+    <!--É possível seguir a mesma ideia dos audios enfileirando tipos diferentes de video para serem reproduzidos em caso de falha do anterior-->
+  </video>
+
+  <h2>Mais uma vez o mesmo video, só que agora do youtube</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/2E4wGl-EhoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
