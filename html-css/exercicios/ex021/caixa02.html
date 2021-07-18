@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+
+        header {
+            background-color: lightgray;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: gray;
+            padding: 2px;
+            box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.459);
+        }
+
+        nav > a {
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            margin-right: 20px;
+        }
+
+        main {
+            background-color: lightgray;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 2px;
+            box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.459);
+        }
+
+        article {
+            background-color: white;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: gray;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px; /* Não existe no arquivo, mas o comportamento que existe no navegador é adicioná-lo com margin 16px ao adicionar o paddign no footer*/
+        }
+
+        div#circulo {
+            height: 100px;
+            width: 100px;
+            margin: 10px auto;
+            background-color: rgb(243, 219, 219);
+            border-radius: 50%;
+            box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.459);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">zelda</a>
+            <a href="#">mario</a>
+            <a href="#">yoshi</a>
+            <a href="#">luigi</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Notícias sobre Street Fighter</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat quas facilis distinctio, eius exercitationem necessitatibus impedit omnis ullam quaerat veritatis temporibus nobis quo consequuntur, sequi corporis enim saepe! Vel, quasi.</p>
+                <aside>
+                    <p>Artigo escrito por Ken Masters</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido para aprendizado</p>
+    </footer>
+    <div id="circulo"></div>
+</body>
+</html>

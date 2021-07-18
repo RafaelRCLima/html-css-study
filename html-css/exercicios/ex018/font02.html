@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+</head>
+<style>
+    @font-face {
+        font-family: 'Avenger';
+        src: url('fonts/avenger.ttf') format('truetype'); /*Alguns navegadores podem funcionar melhor com otf*/
+        font-weight: normal;
+        font-style: normal;
+
+        /*
+            Tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+        */
+    }
+    body {
+        color: black;
+        font: italic normal 2em 'Avenger', sans-serif; /*Propriedade shorthand*/ 
+    }
+
+    h1 {
+        font-family: 'Avenger', sans-serif;
+    }
+</style>
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quis nobis veritatis, optio quas sed labore nesciunt error, illo pariatur vel atque. Quidem reprehenderit, nostrum vitae iusto quis tempora dolore? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis mollitia ea molestias reprehenderit, modi laudantium quos aperiam, iste dicta rem, fuga facilis enim alias a exercitationem. Animi dolorum ex cupiditate?</p>
+</body>
+</html>
