@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300;600&display=swap');
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Encode Sans SC, Helvetica, sans-serif;
 }
 
 header {
@@ -28,7 +30,8 @@ body {
 
 main {
     background-color: whitesmoke;
-    width: 800px;
+    max-width: 800px;
+    min-width: 320px;
     margin: 0px auto;
     padding: 12px;
     box-shadow: 0px 7px 13px 4px rgb(0 0 0 / 46%);
@@ -43,7 +46,7 @@ main > div {
 
 main > h1 {
     color: #2B0FFA;
-    background-image: linear-gradient(to right, #48ACF0, white);
+    background-image: linear-gradient(to right, #48ACF0, whitesmoke);
     padding: 0px 10px;
 }
 
@@ -51,16 +54,20 @@ main > iframe {
     width: 100%;
 }
 
+main p {
+    font-weight: 600;
+}
+
 main > p > strong {
     color: #FA1515;
 }
 
-main > div > img {
-    width: 170px;
+img {
+    width: 100%;
 }
 
-main > img {
-    margin: 0px 140px;
+picture {
+    width: 100%;
 }
 
 footer {
